@@ -1,22 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LivroListaComponent } from './livro-lista/livro-lista.component';
 import { LivroDadosComponent } from './livro-dados/livro-dados.component';
 
-
 @NgModule({
-  declarations: [
+ declarations: [
     AppComponent,
     LivroListaComponent,
-  ],
-  imports: [
+    LivroDadosComponent
+ ],
+ entryComponents: [
+    LivroDadosComponent
+ ],
+ imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    FormsModule
+ ],
+ providers: [],
+ bootstrap: [AppComponent]
 })
 export class AppModule { }
