@@ -6,19 +6,16 @@ import { LivroListaComponent } from './livro-lista/livro-lista.component';
 import { LivroDadosComponent } from './livro-dados/livro-dados.component';
 
 @NgModule({
- declarations: [
+  declarations: [
     AppComponent,
     LivroListaComponent,
     LivroDadosComponent
- ],
- entryComponents: [
-    LivroDadosComponent
- ],
- imports: [
+  ],
+  imports: [
     BrowserModule,
     FormsModule
- ],
- providers: [],
- bootstrap: [AppComponent]
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

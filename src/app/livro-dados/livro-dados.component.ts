@@ -8,8 +8,6 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-livro-dados',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './livro-dados.component.html',
   styleUrls: ['./livro-dados.component.css']
 })
